@@ -66,7 +66,7 @@
             Console.Clear();
 
             Console.WriteLine("┌────────────────┐");
-            Console.WriteLine(" COMPASS BEARINGS  ");
+            Console.WriteLine(" COMPASS BEARINGS");
             Console.WriteLine("└────────────────┘");
             Console.WriteLine();
             Console.WriteLine("This program will convert your degree into a compass direction.");
@@ -105,13 +105,28 @@
 
         static void parkingGarageCost()
         {
+            int start, stop;
+
             Console.Clear();
 
             Console.WriteLine("┌───────────────────┐");
-            Console.WriteLine(" PARKING GARAGE COST  ");
+            Console.WriteLine(" PARKING GARAGE COST");
             Console.WriteLine("└───────────────────┘");
             Console.WriteLine();
-            Console.WriteLine("This program will convert your degree into a compass direction.");
+            Console.Write("This program will charge you based on how many minutes you spend in its 'parknig garage'.");
+
+            while (!int.TryParse(Console.ReadLine(), out start))
+            {
+                Console.WriteLine();
+                Console.WriteLine("Invalid input, please try again. Input must only contain numbers can must not contain letters or special characters.");
+                Console.WriteLine();
+            }
+
+            if (start == 1)
+            {
+
+            }
+
         }
 
         static void hurricane()
